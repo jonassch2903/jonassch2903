@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jonassch2903&label=Profile%20views&color=0e75b6&style=flat" alt="jonassch2903" /> </p>
 
-- 🔭 I’m currently working on **PowerShell Scripts**
+- 🔭 I’m currently working on **scripting**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
