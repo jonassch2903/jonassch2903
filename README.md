@@ -5,4 +5,3 @@
 
 - 🔭 I’m currently working on **scripting** and learning **Swift**
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=jonassch2903&show_icons=true&locale=en" alt="jonassch2903" /></p>
