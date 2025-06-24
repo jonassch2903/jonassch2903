@@ -1,6 +1,6 @@
-<h1 align="center">Hi 👋, I'm Jonas</h1>
+## Hey, I’m Jonas 👋
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=jonassch2903&label=Profile%20views&color=0e75b6&style=flat" alt="jonassch2903" /> </p>
-
-- 🔭 I’m currently working on **scripting** and learning **Swift**
-
+### 🚀 What I’m up to
+- 🐳 Turning messy setups into clean, reproducible Docker containers
+- ✨ Automating everything that stands still long enough (CI/CD, backups, coffee machines)
+- 🌐 Crafting small, no-nonsense web apps to make daily IT life easier
