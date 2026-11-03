@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" role="img" aria-labelledby="console-title console-desc">
+<title id="console-title">jonas@homelab — operator console</title>
+<desc id="console-desc">Animated terminal showing Jonas Schuerkamp, automation running since 2019, and a homelab rack with four units and no alerts.</desc>
+<style>
+text {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+}
+.t-c { fill: #dbe6f5; }
+.t-o { fill: #8b9dba; }
+.t-p { fill: #3ddc97; }
+.t-ok { fill: #3ddc97; }
+.t-warn { fill: #fbbf24; }
+.t-dim { fill: #56698a; }
+
+.ch {
+  opacity: 1;
+  animation: reveal 0.01s linear backwards;
+}
+@keyframes reveal {
+  from { opacity: 0; }
+}
+
+.cursor {
+  opacity: 0;
+  animation: blink 1.1s steps(1, end) infinite;
+}
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.live {
+  animation: breathe 2.8s ease-in-out infinite;
+}
+@keyframes breathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.led {
+  animation: led 3s steps(1, end) infinite;
+}
+@keyframes led {
+  0%, 44% { opacity: 1; }
+  45%, 100% { opacity: 0.16; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ch {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+  .cursor {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+  .live, .led {
+    animation: none !important;
+  }
+}
+</style>
+<defs>
+  <linearGradient id="shell" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#0c1423"/>
+    <stop offset="1" stop-color="#070b12"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#38bdf8" stop-opacity="0.9"/>
+    <stop offset="0.5" stop-color="#2496ed" stop-opacity="0.55"/>
+    <stop offset="1" stop-color="#3ddc97" stop-opacity="0.9"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#2496ed" stop-opacity="0.22"/>
+    <stop offset="1" stop-color="#2496ed" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r="1" fill="#8fb3e0" opacity="0.06"/>
+  </pattern>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#ffffff" opacity="0.012"/>
+  </pattern>
+  <clipPath id="card"><rect width="900" height="340" rx="14"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+  <rect width="900" height="340" fill="url(#shell)"/>
+  <rect width="900" height="340" fill="url(#dots)"/>
+  <rect width="900" height="340" fill="url(#scan)"/>
+  <circle cx="660" cy="150" r="230" fill="url(#glow)"/>
+  <rect width="900" height="2" fill="url(#accent)" opacity="0.75"/>
+
+  <circle cx="26" cy="23" r="5" fill="#ff6b6b" opacity="0.9"/>
+  <circle cx="44" cy="23" r="5" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="62" cy="23" r="5" fill="#3ddc97" opacity="0.9"/>
+  <text x="450" y="27" font-size="11.5" text-anchor="middle">
+    <tspan fill="#dbe6f5" font-weight="600">jonas@homelab</tspan><tspan fill="#56698a">:~/profile</tspan>
+  </text>
+  <rect x="786" y="12" width="88" height="22" rx="11" fill="#0c211c" stroke="#1d4a3c"/>
+  <circle class="live" cx="798" cy="23" r="3" fill="#3ddc97"/>
+  <text x="806" y="27" font-size="9.5" letter-spacing="1.3" fill="#3ddc97">ONLINE</text>
+  <line x1="0" y1="44" x2="900" y2="44" stroke="#182640"/>
+
+  <text x="30" y="84" font-size="13"><tspan class="ch t-p" style="animation-delay:0.300s">$</tspan><tspan class="ch t-p" style="animation-delay:0.314s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:0.328s">w</tspan><tspan class="ch t-c" style="animation-delay:0.342s">h</tspan><tspan class="ch t-c" style="animation-delay:0.356s">o</tspan><tspan class="ch t-c" style="animation-delay:0.370s">a</tspan><tspan class="ch t-c" style="animation-delay:0.384s">m</tspan><tspan class="ch t-c" style="animation-delay:0.398s">i</tspan></text><text x="30" y="106" font-size="13"><tspan class="ch t-o" style="animation-delay:0.632s">j</tspan><tspan class="ch t-o" style="animation-delay:0.646s">o</tspan><tspan class="ch t-o" style="animation-delay:0.660s">n</tspan><tspan class="ch t-o" style="animation-delay:0.674s">a</tspan><tspan class="ch t-o" style="animation-delay:0.688s">s</tspan><tspan class="ch t-o" style="animation-delay:0.702s">&#160;</tspan><tspan class="ch t-o" style="animation-delay:0.716s">s</tspan><tspan class="ch t-o" style="animation-delay:0.730s">c</tspan><tspan class="ch t-o" style="animation-delay:0.744s">h</tspan><tspan class="ch t-o" style="animation-delay:0.758s">u</tspan><tspan class="ch t-o" style="animation-delay:0.772s">e</tspan><tspan class="ch t-o" style="animation-delay:0.786s">r</tspan><tspan class="ch t-o" style="animation-delay:0.800s">k</tspan><tspan class="ch t-o" style="animation-delay:0.814s">a</tspan><tspan class="ch t-o" style="animation-delay:0.828s">m</tspan><tspan class="ch t-o" style="animation-delay:0.842s">p</tspan></text><text x="30" y="150" font-size="13"><tspan class="ch t-p" style="animation-delay:1.306s">$</tspan><tspan class="ch t-p" style="animation-delay:1.320s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:1.334s">s</tspan><tspan class="ch t-c" style="animation-delay:1.348s">y</tspan><tspan class="ch t-c" style="animation-delay:1.362s">s</tspan><tspan class="ch t-c" style="animation-delay:1.376s">t</tspan><tspan class="ch t-c" style="animation-delay:1.390s">e</tspan><tspan class="ch t-c" style="animation-delay:1.404s">m</tspan><tspan class="ch t-c" style="animation-delay:1.418s">c</tspan><tspan class="ch t-c" style="animation-delay:1.432s">t</tspan><tspan class="ch t-c" style="animation-delay:1.446s">l</tspan><tspan class="ch t-c" style="animation-delay:1.460s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:1.474s">s</tspan><tspan class="ch t-c" style="animation-delay:1.488s">t</tspan><tspan class="ch t-c" style="animation-delay:1.502s">a</tspan><tspan class="ch t-c" style="animation-delay:1.516s">t</tspan><tspan class="ch t-c" style="animation-delay:1.530s">u</tspan><tspan class="ch t-c" style="animation-delay:1.544s">s</tspan><tspan class="ch t-c" style="animation-delay:1.558s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:1.572s">a</tspan><tspan class="ch t-c" style="animation-delay:1.586s">u</tspan><tspan class="ch t-c" style="animation-delay:1.600s">t</tspan><tspan class="ch t-c" style="animation-delay:1.614s">o</tspan><tspan class="ch t-c" style="animation-delay:1.628s">m</tspan><tspan class="ch t-c" style="animation-delay:1.642s">a</tspan><tspan class="ch t-c" style="animation-delay:1.656s">t</tspan><tspan class="ch t-c" style="animation-delay:1.670s">i</tspan><tspan class="ch t-c" style="animation-delay:1.684s">o</tspan><tspan class="ch t-c" style="animation-delay:1.698s">n</tspan></text><text x="30" y="172" font-size="13"><tspan class="ch t-ok" style="animation-delay:1.972s">●</tspan><tspan class="ch t-ok" style="animation-delay:1.986s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:2.000s">a</tspan><tspan class="ch t-ok" style="animation-delay:2.014s">c</tspan><tspan class="ch t-ok" style="animation-delay:2.028s">t</tspan><tspan class="ch t-ok" style="animation-delay:2.042s">i</tspan><tspan class="ch t-ok" style="animation-delay:2.056s">v</tspan><tspan class="ch t-ok" style="animation-delay:2.070s">e</tspan><tspan class="ch t-ok" style="animation-delay:2.084s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:2.098s">(</tspan><tspan class="ch t-ok" style="animation-delay:2.112s">r</tspan><tspan class="ch t-ok" style="animation-delay:2.126s">u</tspan><tspan class="ch t-ok" style="animation-delay:2.140s">n</tspan><tspan class="ch t-ok" style="animation-delay:2.154s">n</tspan><tspan class="ch t-ok" style="animation-delay:2.168s">i</tspan><tspan class="ch t-ok" style="animation-delay:2.182s">n</tspan><tspan class="ch t-ok" style="animation-delay:2.196s">g</tspan><tspan class="ch t-ok" style="animation-delay:2.210s">)</tspan><tspan class="ch t-dim" style="animation-delay:2.224s">&#160;</tspan><tspan class="ch t-dim" style="animation-delay:2.238s">·</tspan><tspan class="ch t-dim" style="animation-delay:2.252s">&#160;</tspan><tspan class="ch t-dim" style="animation-delay:2.266s">s</tspan><tspan class="ch t-dim" style="animation-delay:2.280s">i</tspan><tspan class="ch t-dim" style="animation-delay:2.294s">n</tspan><tspan class="ch t-dim" style="animation-delay:2.308s">c</tspan><tspan class="ch t-dim" style="animation-delay:2.322s">e</tspan><tspan class="ch t-dim" style="animation-delay:2.336s">&#160;</tspan><tspan class="ch t-dim" style="animation-delay:2.350s">2</tspan><tspan class="ch t-dim" style="animation-delay:2.364s">0</tspan><tspan class="ch t-dim" style="animation-delay:2.378s">1</tspan><tspan class="ch t-dim" style="animation-delay:2.392s">9</tspan></text><text x="30" y="216" font-size="13"><tspan class="ch t-p" style="animation-delay:2.856s">$</tspan><tspan class="ch t-p" style="animation-delay:2.870s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:2.884s">d</tspan><tspan class="ch t-c" style="animation-delay:2.898s">o</tspan><tspan class="ch t-c" style="animation-delay:2.912s">c</tspan><tspan class="ch t-c" style="animation-delay:2.926s">k</tspan><tspan class="ch t-c" style="animation-delay:2.940s">e</tspan><tspan class="ch t-c" style="animation-delay:2.954s">r</tspan><tspan class="ch t-c" style="animation-delay:2.968s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:2.982s">p</tspan><tspan class="ch t-c" style="animation-delay:2.996s">s</tspan></text><text x="30" y="238" font-size="13"><tspan class="ch t-c" style="animation-delay:3.310s">h</tspan><tspan class="ch t-c" style="animation-delay:3.324s">o</tspan><tspan class="ch t-c" style="animation-delay:3.338s">m</tspan><tspan class="ch t-c" style="animation-delay:3.352s">e</tspan><tspan class="ch t-c" style="animation-delay:3.366s">l</tspan><tspan class="ch t-c" style="animation-delay:3.380s">a</tspan><tspan class="ch t-c" style="animation-delay:3.394s">b</tspan><tspan class="ch t-c" style="animation-delay:3.408s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:3.422s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:3.436s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.450s">u</tspan><tspan class="ch t-ok" style="animation-delay:3.464s">p</tspan><tspan class="ch t-ok" style="animation-delay:3.478s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.492s">2</tspan><tspan class="ch t-ok" style="animation-delay:3.506s">4</tspan><tspan class="ch t-ok" style="animation-delay:3.520s">/</tspan><tspan class="ch t-ok" style="animation-delay:3.534s">7</tspan><tspan class="ch t-ok" style="animation-delay:3.548s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.562s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.576s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.590s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.604s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.618s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.632s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.646s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:3.660s">b</tspan><tspan class="ch t-c" style="animation-delay:3.674s">a</tspan><tspan class="ch t-c" style="animation-delay:3.688s">c</tspan><tspan class="ch t-c" style="animation-delay:3.702s">k</tspan><tspan class="ch t-c" style="animation-delay:3.716s">u</tspan><tspan class="ch t-c" style="animation-delay:3.730s">p</tspan><tspan class="ch t-c" style="animation-delay:3.744s">s</tspan><tspan class="ch t-c" style="animation-delay:3.758s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:3.772s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:3.786s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.800s">u</tspan><tspan class="ch t-ok" style="animation-delay:3.814s">p</tspan><tspan class="ch t-ok" style="animation-delay:3.828s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:3.842s">(</tspan><tspan class="ch t-ok" style="animation-delay:3.856s">c</tspan><tspan class="ch t-ok" style="animation-delay:3.870s">r</tspan><tspan class="ch t-ok" style="animation-delay:3.884s">o</tspan><tspan class="ch t-ok" style="animation-delay:3.898s">n</tspan><tspan class="ch t-ok" style="animation-delay:3.912s">)</tspan></text><text x="30" y="260" font-size="13"><tspan class="ch t-c" style="animation-delay:4.166s">c</tspan><tspan class="ch t-c" style="animation-delay:4.180s">o</tspan><tspan class="ch t-c" style="animation-delay:4.194s">f</tspan><tspan class="ch t-c" style="animation-delay:4.208s">f</tspan><tspan class="ch t-c" style="animation-delay:4.222s">e</tspan><tspan class="ch t-c" style="animation-delay:4.236s">e</tspan><tspan class="ch t-c" style="animation-delay:4.250s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:4.264s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:4.278s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:4.292s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.306s">u</tspan><tspan class="ch t-ok" style="animation-delay:4.320s">p</tspan><tspan class="ch t-ok" style="animation-delay:4.334s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.348s">1</tspan><tspan class="ch t-ok" style="animation-delay:4.362s">2</tspan><tspan class="ch t-ok" style="animation-delay:4.376s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.390s">m</tspan><tspan class="ch t-ok" style="animation-delay:4.404s">i</tspan><tspan class="ch t-ok" style="animation-delay:4.418s">n</tspan><tspan class="ch t-ok" style="animation-delay:4.432s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.446s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.460s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.474s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.488s">&#160;</tspan><tspan class="ch t-ok" style="animation-delay:4.502s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:4.516s">a</tspan><tspan class="ch t-c" style="animation-delay:4.530s">g</tspan><tspan class="ch t-c" style="animation-delay:4.544s">e</tspan><tspan class="ch t-c" style="animation-delay:4.558s">n</tspan><tspan class="ch t-c" style="animation-delay:4.572s">t</tspan><tspan class="ch t-c" style="animation-delay:4.586s">s</tspan><tspan class="ch t-c" style="animation-delay:4.600s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:4.614s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:4.628s">&#160;</tspan><tspan class="ch t-c" style="animation-delay:4.642s">&#160;</tspan><tspan class="ch t-warn" style="animation-delay:4.656s">u</tspan><tspan class="ch t-warn" style="animation-delay:4.670s">p</tspan><tspan class="ch t-warn" style="animation-delay:4.684s">&#160;</tspan><tspan class="ch t-warn" style="animation-delay:4.698s">(</tspan><tspan class="ch t-warn" style="animation-delay:4.712s">b</tspan><tspan class="ch t-warn" style="animation-delay:4.726s">e</tspan><tspan class="ch t-warn" style="animation-delay:4.740s">t</tspan><tspan class="ch t-warn" style="animation-delay:4.754s">a</tspan><tspan class="ch t-warn" style="animation-delay:4.768s">)</tspan></text><text x="30" y="282" font-size="13"><tspan class="ch t-p" style="animation-delay:5.082s">$</tspan><tspan class="ch t-p" style="animation-delay:5.096s">&#160;</tspan></text>
+  <rect class="cursor" x="45.7" y="272" width="7.6" height="14" rx="1" fill="#3ddc97" style="animation-delay:5.26s"/>
+
+  <line x1="558" y1="60" x2="558" y2="284" stroke="#182640"/>
+
+  <text x="582" y="82" font-size="12.5" font-weight="600" fill="#dbe6f5">jonas@homelab</text>
+  <text x="872" y="82" font-size="9" letter-spacing="1.4" text-anchor="end" fill="#56698a">// NEOFETCH</text>
+  <line x1="582" y1="94" x2="872" y2="94" stroke="#1c2b45"/>
+
+  <rect x="582" y="106" width="84" height="96" rx="5" fill="#0a111d" stroke="#263754"/><rect x="587" y="111" width="74" height="86" rx="3" fill="#0c1525" stroke="#1a2942"/><rect x="589" y="116" width="70" height="15" rx="2" fill="#111d31" stroke="#1e2f4a"/><circle cx="596" cy="123.5" r="1.8" fill="#3ddc97" opacity="1"/><circle cx="603" cy="123.5" r="1.8" fill="#3ddc97" opacity="1" class="led" style="animation-delay:3.2s"/><circle cx="610" cy="123.5" r="1.8" fill="#fbbf24" opacity="1"/><line x1="618" y1="121" x2="618" y2="126" stroke="#1c2b44" stroke-width="1"/><line x1="624" y1="121" x2="624" y2="126" stroke="#1c2b44" stroke-width="1"/><line x1="630" y1="121" x2="630" y2="126" stroke="#1c2b44" stroke-width="1"/><line x1="636" y1="121" x2="636" y2="126" stroke="#1c2b44" stroke-width="1"/><line x1="642" y1="121" x2="642" y2="126" stroke="#1c2b44" stroke-width="1"/><line x1="648" y1="121" x2="648" y2="126" stroke="#1c2b44" stroke-width="1"/><text x="654" y="126" font-size="7.5" text-anchor="end" fill="#33465f">01</text><rect x="589" y="135" width="70" height="15" rx="2" fill="#111d31" stroke="#1e2f4a"/><circle cx="596" cy="142.5" r="1.8" fill="#3ddc97" opacity="1" class="led" style="animation-delay:2.1s"/><circle cx="603" cy="142.5" r="1.8" fill="#38bdf8" opacity="1"/><circle cx="610" cy="142.5" r="1.8" fill="#56698a" opacity="0.25"/><line x1="618" y1="140" x2="618" y2="145" stroke="#1c2b44" stroke-width="1"/><line x1="624" y1="140" x2="624" y2="145" stroke="#1c2b44" stroke-width="1"/><line x1="630" y1="140" x2="630" y2="145" stroke="#1c2b44" stroke-width="1"/><line x1="636" y1="140" x2="636" y2="145" stroke="#1c2b44" stroke-width="1"/><line x1="642" y1="140" x2="642" y2="145" stroke="#1c2b44" stroke-width="1"/><line x1="648" y1="140" x2="648" y2="145" stroke="#1c2b44" stroke-width="1"/><text x="654" y="145" font-size="7.5" text-anchor="end" fill="#33465f">02</text><rect x="589" y="154" width="70" height="15" rx="2" fill="#111d31" stroke="#1e2f4a"/><circle cx="596" cy="161.5" r="1.8" fill="#3ddc97" opacity="1"/><circle cx="603" cy="161.5" r="1.8" fill="#3ddc97" opacity="1" class="led" style="animation-delay:3.8s"/><circle cx="610" cy="161.5" r="1.8" fill="#fbbf24" opacity="1" class="led" style="animation-delay:4.3s"/><line x1="618" y1="159" x2="618" y2="164" stroke="#1c2b44" stroke-width="1"/><line x1="624" y1="159" x2="624" y2="164" stroke="#1c2b44" stroke-width="1"/><line x1="630" y1="159" x2="630" y2="164" stroke="#1c2b44" stroke-width="1"/><line x1="636" y1="159" x2="636" y2="164" stroke="#1c2b44" stroke-width="1"/><line x1="642" y1="159" x2="642" y2="164" stroke="#1c2b44" stroke-width="1"/><line x1="648" y1="159" x2="648" y2="164" stroke="#1c2b44" stroke-width="1"/><text x="654" y="164" font-size="7.5" text-anchor="end" fill="#33465f">03</text><rect x="589" y="173" width="70" height="15" rx="2" fill="#111d31" stroke="#1e2f4a"/><circle cx="596" cy="180.5" r="1.8" fill="#38bdf8" opacity="1" class="led" style="animation-delay:2.7s"/><circle cx="603" cy="180.5" r="1.8" fill="#3ddc97" opacity="1"/><circle cx="610" cy="180.5" r="1.8" fill="#3ddc97" opacity="1" class="led" style="animation-delay:1.6s"/><line x1="618" y1="178" x2="618" y2="183" stroke="#1c2b44" stroke-width="1"/><line x1="624" y1="178" x2="624" y2="183" stroke="#1c2b44" stroke-width="1"/><line x1="630" y1="178" x2="630" y2="183" stroke="#1c2b44" stroke-width="1"/><line x1="636" y1="178" x2="636" y2="183" stroke="#1c2b44" stroke-width="1"/><line x1="642" y1="178" x2="642" y2="183" stroke="#1c2b44" stroke-width="1"/><line x1="648" y1="178" x2="648" y2="183" stroke="#1c2b44" stroke-width="1"/><text x="654" y="183" font-size="7.5" text-anchor="end" fill="#33465f">04</text><text x="582" y="222" font-size="9" letter-spacing="0.9" fill="#56698a">rack-01</text><text x="582" y="237" font-size="9" letter-spacing="0.9" fill="#3ddc97">0 alerts</text>
+
+  <text x="684" y="122" font-size="9.5" letter-spacing="1.1" fill="#56698a">OS</text><text x="748" y="122" font-size="11.5" fill="#dbe6f5">Linux · Docker</text>
+  <text x="684" y="143" font-size="9.5" letter-spacing="1.1" fill="#56698a">ROLE</text><text x="748" y="143" font-size="11.5" fill="#dbe6f5">IT generalist</text>
+  <text x="684" y="164" font-size="9.5" letter-spacing="1.1" fill="#56698a">SHELL</text><text x="748" y="164" font-size="11.5" fill="#dbe6f5">pwsh · bash</text>
+  <text x="684" y="185" font-size="9.5" letter-spacing="1.1" fill="#56698a">SINCE</text><text x="748" y="185" font-size="11.5" fill="#dbe6f5">2019</text>
+  <text x="684" y="206" font-size="9.5" letter-spacing="1.1" fill="#56698a">REPOS</text><text x="748" y="206" font-size="11.5" fill="#dbe6f5">mostly private</text>
+  <text x="684" y="227" font-size="9.5" letter-spacing="1.1" fill="#56698a">COFFEE</text>
+  <rect x="748" y="219" width="7" height="8" rx="1" fill="#fbbf24"/><rect x="757" y="219" width="7" height="8" rx="1" fill="#fbbf24"/><rect x="766" y="219" width="7" height="8" rx="1" fill="#fbbf24"/><rect x="775" y="219" width="7" height="8" rx="1" fill="#fbbf24"/><rect x="784" y="219" width="7" height="8" rx="1" fill="#fbbf24"/><rect x="793" y="219" width="7" height="8" rx="1" fill="#fbbf24"/><rect x="802" y="219" width="7" height="8" rx="1" fill="#1e2c46"/><rect x="811" y="219" width="7" height="8" rx="1" fill="#1e2c46"/><text x="821" y="227" font-size="10.5" fill="#fbbf24">75%</text>
+
+  <text x="582" y="253" font-size="8.5" letter-spacing="1.3" fill="#56698a">26-WEEK ACTIVITY</text><line x1="582" y1="282" x2="872" y2="282" stroke="#1a2942"/><rect x="582" y="279" width="8" height="3" rx="1" fill="#3ddc97" opacity="0.40"/><rect x="593" y="280" width="8" height="2" rx="1" fill="#3ddc97" opacity="0.30"/><rect x="604" y="279" width="8" height="3" rx="1" fill="#3ddc97" opacity="0.40"/><rect x="615" y="266" width="8" height="16" rx="1" fill="#3ddc97" opacity="0.80"/><rect x="626" y="273" width="8" height="9" rx="1" fill="#3ddc97" opacity="0.60"/><rect x="637" y="269" width="8" height="13" rx="1" fill="#3ddc97" opacity="0.70"/><rect x="648" y="266" width="8" height="16" rx="1" fill="#3ddc97" opacity="0.80"/><rect x="659" y="279" width="8" height="3" rx="1" fill="#3ddc97" opacity="0.40"/><rect x="670" y="273" width="8" height="9" rx="1" fill="#3ddc97" opacity="0.60"/><rect x="681" y="279" width="8" height="3" rx="1" fill="#3ddc97" opacity="0.40"/><rect x="692" y="280" width="8" height="2" rx="1" fill="#3ddc97" opacity="0.30"/><rect x="703" y="280" width="8" height="2" rx="1" fill="#3ddc97" opacity="0.30"/><rect x="714" y="279" width="8" height="3" rx="1" fill="#3ddc97" opacity="0.40"/><rect x="725" y="276" width="8" height="6" rx="1" fill="#3ddc97" opacity="0.50"/><rect x="736" y="269" width="8" height="13" rx="1" fill="#3ddc97" opacity="0.70"/><rect x="747" y="269" width="8" height="13" rx="1" fill="#3ddc97" opacity="0.70"/><rect x="758" y="276" width="8" height="6" rx="1" fill="#3ddc97" opacity="0.50"/><rect x="769" y="269" width="8" height="13" rx="1" fill="#3ddc97" opacity="0.70"/><rect x="780" y="273" width="8" height="9" rx="1" fill="#3ddc97" opacity="0.60"/><rect x="791" y="273" width="8" height="9" rx="1" fill="#3ddc97" opacity="0.60"/><rect x="802" y="273" width="8" height="9" rx="1" fill="#3ddc97" opacity="0.60"/><rect x="813" y="269" width="8" height="13" rx="1" fill="#3ddc97" opacity="0.70"/><rect x="824" y="276" width="8" height="6" rx="1" fill="#3ddc97" opacity="0.50"/><rect x="835" y="276" width="8" height="6" rx="1" fill="#3ddc97" opacity="0.50"/><rect x="846" y="260" width="8" height="22" rx="1" fill="#3ddc97" opacity="1.00"/><rect x="857" y="260" width="8" height="22" rx="1" fill="#3ddc97" opacity="1.00"/>
+
+  <rect x="0" y="298" width="900" height="42" fill="#080d16"/>
+  <line x1="0" y1="298" x2="900" y2="298" stroke="#182640"/>
+  <text x="28" y="323" font-size="9.5" letter-spacing="1.2">
+    <tspan fill="#3ddc97">●</tspan><tspan fill="#8b9dba"> ONLINE</tspan><tspan fill="#56698a">     |     </tspan><tspan fill="#8b9dba">UPTIME 7 YRS</tspan><tspan fill="#56698a">     |     </tspan><tspan fill="#8b9dba">ACTIVITY 782 / YR</tspan><tspan fill="#56698a">     |     </tspan><tspan fill="#8b9dba">SELF-HOSTED</tspan>
+  </text>
+  <text x="872" y="323" font-size="9.5" letter-spacing="1.2" text-anchor="end" fill="#56698a">SNAPSHOT 2026.11</text>
+</g>
+<rect x="0.5" y="0.5" width="899" height="339" rx="14" fill="none" stroke="#24344f"/>
+</svg>
